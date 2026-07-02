@@ -1,14 +1,13 @@
-#include <stdio.h>
-#include <stdbool.h>
-
-/* FIFO Page replacement algorithm 
+/* 
+ * FIFO Page replacement algorithm 
  * OS keeps track of all pages in the memory in a queue.
  * Oldest page is in the front of the queue.
  * When a new page needs to be replaced -> the page in the front of the queue
  * is selected for removal.
  */
 
- /* Pros and Cons
+ /* 
+  * Pros and Cons
   * Pros:
   *     - Easy to implement
   *     - Fairness: All pages have an equal chance.
@@ -16,9 +15,12 @@
   *     - Required minimal memory and processing
   * Cons:
   *     - Higher page fault rate
-  *     - It may replace frequently used pages.
-  * 
-  * */
+  *     - It may replace frequently used pages. 
+  */
+
+#include <stdio.h>
+#include <stdbool.h>
+
 #define MAX_FRAMES  4 
 
 int frames[MAX_FRAMES];

@@ -1,3 +1,22 @@
+/* 
+ * FCFS (First-Come, First-Served) Scheduling Algorithm
+ * - It is a algorithm in which the process that arrives first will get the CPU first.
+ *   Processes are executed in the order of their arrival.
+ * - It folows Non-preemptive algorithm, it means when process gets the CPU, it will
+ * run until finishes.
+ */
+
+ /* 
+  * Pros and Cons
+  * Pros:
+  *     - Easy to implement
+  *     - Fair because processes are served in arrival order.
+  *     - No starvation: No tasks will be postponed indefinitely.
+  * Cons:
+  *     - waiting time is often quite long.
+  *     - Not suitable for interactive or real-time systems.
+  */
+
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
